@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashoka Chakra</title>
+</head>
+<body>
+    <!-- Radius=200 , X= 300 , Y= 300-->
+    <svg width="1000" height="1000" viewport="0 0 2048 2048">
+        <circle cx="300" cy="300" r="250" stroke-width="20" fill="white" stroke="blue"/>
+        <circle cx="300" cy="300" fill="blue" r="20"/>
+        <g id="quad">
+            <g id="polyline">
+        <polygon points="300,300 309,390 300,550 291,390" fill="blue"/>
+        <circle r="12" cx="270" cy="540" fill="blue" />
+            </g>
+        <use xlink:href="#polyline" transform="rotate(15 300 300)"/>
+        <use xlink:href="#polyline" transform="rotate(30 300 300)"/>
+        <use xlink:href="#polyline" transform="rotate(45 300 300)"/>
+        <use xlink:href="#polyline" transform="rotate(60 300 300)"/>
+        <use xlink:href="#polyline" transform="rotate(75 300 300)"/>
+    </g>
+    <use xlink:href="#quad" transform="rotate(90 300 300)"/>
+    <use xlink:href="#quad" transform="rotate(180 300 300)"/>
+    <use xlink:href="#quad" transform="rotate(270 300 300)"/>
+        
+    </svg>
+</body>
+</html>
